@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
-.card--field-force {
+.card--profile {
   margin: 5px;
   padding: 25px 20px 0px 20px;
   max-width: 500px;
@@ -9,7 +9,7 @@
   border: 1px solid #f2f2f2;
 }
 
-.card--field-force .card-body--field-force {
+.card--profile .card-body--profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +20,7 @@
   border-bottom: 1px solid #F4F4F4;
 }
 
-.card--field-force .card-body--field-force .basic-info {
+.card--profile .card-body--profile .basic-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,14 +29,14 @@
           justify-content: space-between;
 }
 
-.card--field-force .card-body--field-force .basic-info .image {
+.card--profile .card-body--profile .basic-info .image {
   position: relative;
   height: 60px;
   width: 66px;
   overflow: hidden;
 }
 
-.card--field-force .card-body--field-force .basic-info .image .tag--mdo {
+.card--profile .card-body--profile .basic-info .image .tag--mdo {
   height: 18px;
   width: 34px;
   background: #D175C9;
@@ -55,14 +55,14 @@
   line-height: 14px;
 }
 
-.card--field-force .card-body--field-force .basic-info .image .field-force-image {
+.card--profile .card-body--profile .basic-info .image .profile-image {
   height: 48px;
   width: 48px;
   border-radius: 50%;
   margin-right: 16px;
 }
 
-.card--field-force .card-body--field-force .basic-info .info .name {
+.card--profile .card-body--profile .basic-info .info .name {
   text-transform: capitalize;
   height: 24px;
   width: 140px;
@@ -74,7 +74,7 @@
   line-height: 24px;
 }
 
-.card--field-force .card-body--field-force .basic-info .info .type {
+.card--profile .card-body--profile .basic-info .info .type {
   overflow: hidden;
   text-overflow: ellipsis;
   text-transform: uppercase;
@@ -85,7 +85,7 @@
   line-height: 16px;
 }
 
-.card--field-force .card-body--field-force .basic-info .info .spot {
+.card--profile .card-body--profile .basic-info .info .spot {
   overflow: hidden;
   text-overflow: ellipsis;
   text-transform: uppercase;
@@ -96,7 +96,7 @@
   line-height: 14px;
 }
 
-.card--field-force .card-body--field-force .status {
+.card--profile .card-body--profile .status {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,7 +110,7 @@
   overflow: hidden;
 }
 
-.card--field-force .card-body--field-force .status .date {
+.card--profile .card-body--profile .status .date {
   height: 24px;
   width: 114px;
   color: #434364;
@@ -122,7 +122,7 @@
   text-align: right;
 }
 
-.card--field-force .card-body--field-force .status .tag {
+.card--profile .card-body--profile .status .tag {
   text-transform: capitalize;
   height: 24px;
   width: 69px;
@@ -134,7 +134,7 @@
   line-height: 24px;
 }
 
-.card--field-force .card-footer--field-force {
+.card--profile .card-footer--profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +147,7 @@
   padding: 16px 0px;
 }
 
-.card--field-force .card-footer--field-force button {
+.card--profile .card-footer--profile button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
