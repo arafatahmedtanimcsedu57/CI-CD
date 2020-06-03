@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 9002 -c .storybook",
+    "build": "build-storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Arafat Ahmed",
