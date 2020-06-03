@@ -31,3 +31,8 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+    - name: Install npm and build
+      run: |
+        npm i
+        npm run build
+        storybook-static
