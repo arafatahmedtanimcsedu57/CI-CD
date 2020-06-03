@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.title {
+  margin: 25px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+h1.title {
+  font-size: 34px;
+  color: #444;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+h2.title {
+  font-size: 26px;
+  color: #555;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+h3.title {
+  font-size: 22px;
+  color: #666;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+p.text {
+  margin: 20px;
+  font-size: 16px;
+  color: #666;
+
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+p.text .allotted {
+  padding: 3px;
+  margin-left: 4px;
+  line-height: 30px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 5px;
+
+
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+li {
+  font-size: 16px;
+
+
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.example {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+
+
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.ex-title {
+  font-size: 24px;
+  color: #666;
+
+
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.ex-toggle {
+  color: #999;
+  cursor: pointer;
+
+
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.ex-toggle:hover {
+  text-decoration: underline;
+
+
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+/* ================================== */
+.global-search-wrapper {
+  width: 300px;
+
+
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.global-search-wrapper .ant-input-suffix {
+  right: 0 !important;
+}
+
+/* =================================== */
+.ml20 {
+  margin-left: 20px !important;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
