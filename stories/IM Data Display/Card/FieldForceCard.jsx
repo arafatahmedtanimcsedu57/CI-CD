@@ -19,12 +19,12 @@ class FieldForceCard extends Component {
         const { img, name, type, fsc, spot, date, status } = this.state.fieldForce
         return (
             <section className="example">
-                <h3 className="ex-title">Card for Field-Force</h3>
-                <div className="card--field-force">
-                    <div className="card-body--field-force">
+                <h3 className="ex-title">Card for Profile</h3>
+                <div className="card--profile">
+                    <div className="card-body--profile">
                         <div className="basic-info">
                             <div className="image">
-                                <img className="field-force-image" src={img} />
+                                <img className="profile-image" src={img} />
                                 <div className={`tag--${type}`}>
                                     {type}
                                 </div>
@@ -51,7 +51,7 @@ class FieldForceCard extends Component {
                         </div>
                     </div>
 
-                    <div className="card-footer--field-force">
+                    <div className="card-footer--profile">
                         <button className="card-action--manage-leave">
                             Manage Leave
                     </button>
