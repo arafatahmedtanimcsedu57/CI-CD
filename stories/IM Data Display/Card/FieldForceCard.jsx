@@ -20,6 +20,8 @@ class FieldForceCard extends Component {
         return (
             <section className="example">
                 <h3 className="ex-title">Card for Profile</h3>
+
+
                 <div className="card--profile">
                     <div className="card-body--profile">
                         <div className="basic-info">

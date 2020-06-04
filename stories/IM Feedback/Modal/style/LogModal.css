@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 400px;
+  min-width: 700px;
+  position: fixed;
+  background: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.modal-main .modal-header {
+  padding: 12px;
+}
+
+.modal-main .modal-header .headline {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #434364;
+}
+
+.modal-main .modal-header .sub-headline {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
+}
+
+.modal-main .modal-body {
+  max-height: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px;
+}
+
+.modal-main .modal-body .basic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal-main .modal-body .basic .image {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  margin-right: 32px;
+}
+
+.modal-main .modal-body .basic .image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.modal-main .modal-body .basic .image .tag {
+  height: 29px;
+  width: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+  bottom: 0;
+  left: 45px;
+  border-radius: 2px;
+  background: #434364;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.modal-main .modal-body .basic .description .name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.modal-main .modal-body .basic .description .name-container .name {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #434364;
+  text-transform: capitalize;
+}
+
+.modal-main .modal-body .basic .description .name-container .type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 23px;
+  width: 44px;
+  background: #D175C9;
+  border-radius: 2px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.modal-main .modal-body .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-main .modal-body .action .button--edit {
+  background: #E2136E;
+  height: 40px;
+  width: 140px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.modal-main .modal-body .action .button--view-log {
+  background: white;
+  height: 40px;
+  width: 140px;
+  border: none;
+  outline: none;
+  border: 1px solid #E2136E;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #E2136E;
+  margin-bottom: 16px;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+/*# sourceMappingURL=LogModal.css.map */
