@@ -2,6 +2,10 @@
 import React, { Component } from "react";
 import EscapeOutside from "react-escape-outside"
 
+
+import fse_img from './_image/person.svg';
+import leave_day_img from './_image/event.svg';
+
 import './style/LogModal.css';
 
 const Modal = ({ handleClose, show, children }) => {
@@ -11,7 +15,7 @@ const Modal = ({ handleClose, show, children }) => {
             <EscapeOutside onEscapeOutside={handleClose}>
                 <section className="modal-main">
                     {children}
-                    <button onClick={handleClose}>close</button>
+                    {/* <button onClick={handleClose}>close</button> */}
                 </section>
             </EscapeOutside>
         </div>
@@ -74,16 +78,20 @@ class LogModal extends Component {
 
                                 <div className="walet">{this.state.data.walet}</div>
 
-                                <div className="fse">
-                                    <img />
-                                    <div className="tag">FSE</div>
-                                    <div className="value">{this.state.data.fse}</div>
+                                <div className="info-container">
+                                    <img src={fse_img} alt="fse" />
+                                    <div className="info">
+                                        <div className="tag">FSE</div>
+                                        <div className="value">{this.state.data.fse}</div>
+                                    </div>
                                 </div>
 
-                                <div className="leave-day">
-                                    <img />
-                                    <div className="tag">Leave Day</div>
-                                    <div className="value">{this.state.data.leave}</div>
+                                <div className="info-container">
+                                    <img src={leave_day_img} alt="leave day" />
+                                    <div className="info">
+                                        <div className="tag">Leave Day</div>
+                                        <div className="value">{this.state.data.leave}</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

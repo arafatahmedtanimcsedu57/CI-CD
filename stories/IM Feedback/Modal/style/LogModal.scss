@@ -1,8 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
+
+@mixin for-phone-only {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
 .modal {
     position: fixed;
+    overflow: hidden;
     top: 0;
     left: 0;
     width: 100%;
@@ -11,11 +43,15 @@
 }
 
 .modal-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
     padding: 12px;
     border-radius: 8px;
 
-    min-height: 400px;
-    min-width: 700px;
+    height: auto;
+    min-width: auto;
     position: fixed;
 
     background: white;
@@ -45,16 +81,56 @@
     }
 
     .modal-body {
-        max-height: 440px;
         display: flex;
         flex-wrap: wrap;
+        position: relative;
         justify-content: space-between;
+        overflow-y: auto !important;
 
-        padding: 12px;
+        @include for-phone-only {
+            justify-content: center;
+        }
+
+        @include for-tablet-portrait-up {
+            justify-content: center;
+        }
+
+        @include for-tablet-landscape-up {
+            justify-content: center;
+        }
+
+        @include for-desktop-up {
+            justify-content: space-between;
+        }
+
+        @include for-big-desktop-up {
+            justify-content: space-between;
+        }
 
         .basic {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
+
+            @include for-phone-only {
+                justify-content: center;
+            }
+
+            @include for-tablet-portrait-up {
+                justify-content: center;
+            }
+
+            @include for-tablet-landscape-up {
+                justify-content: center;
+            }
+
+            @include for-desktop-up {
+                justify-content: space-between;
+            }
+
+            @include for-big-desktop-up {
+                justify-content: space-between;
+            }
 
             .image {
                 position: relative;
@@ -62,7 +138,7 @@
                 width: 200px;
                 overflow: hidden;
 
-                margin-right: 32px;
+                margin: 12px;
 
                 img {
                     width: 200px;
@@ -95,6 +171,8 @@
             }
 
             .description {
+                margin: 12px;
+
                 .name-container {
                     display: flex;
                     flex-wrap: nowrap;
@@ -107,6 +185,8 @@
 
                         color: #434364;
                         text-transform: capitalize;
+
+                        margin-right: 12px;
                     }
 
                     .type {
@@ -130,12 +210,74 @@
                         text-transform: uppercase;
                     }
                 }
+
+                .walet {
+                    margin-top: 18px;
+                    font-family: Roboto;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #434343;
+                }
+
+                .info-container {
+                    display: flex;
+                    margin-top: 24px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+
+                        margin-right: 16px;
+                    }
+
+                    .info {
+                        .tag {
+                            font-family: Roboto;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #707070;
+                        }
+
+                        .value {
+                            font-family: Roboto;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #252525;
+
+                            text-transform: capitalize;
+                        }
+                    }
+                }
             }
         }
 
         .action {
             display: flex;
             flex-direction: column;
+
+            @include for-phone-only {
+                flex-direction: row;
+            }
+
+            @include for-tablet-portrait-up {
+                flex-direction: row;
+            }
+
+            @include for-tablet-landscape-up {
+                flex-direction: row;
+            }
+
+
+            @include for-desktop-up {
+                flex-direction: column;
+            }
+
+            @include for-big-desktop-up {
+                justify-content: column;
+            }
 
             .button--edit {
                 background: #E2136E;
@@ -152,7 +294,7 @@
                 line-height: 20px;
                 color: white;
 
-                margin-bottom: 16px;
+                margin: 12px;
             }
 
             .button--view-log {
@@ -171,7 +313,7 @@
                 line-height: 20px;
                 color: #E2136E;
 
-                margin-bottom: 16px;
+                margin: 12px;
             }
         }
     }

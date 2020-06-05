@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 .modal {
   position: fixed;
+  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -10,10 +11,19 @@
 }
 
 .modal-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 12px;
   border-radius: 8px;
-  min-height: 400px;
-  min-width: 700px;
+  height: auto;
+  min-width: auto;
   position: fixed;
   background: white;
   top: 50%;
@@ -43,16 +53,56 @@
 }
 
 .modal-main .modal-body {
-  max-height: 440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 12px;
+  overflow-y: auto !important;
+}
+
+@media (max-width: 599px) {
+  .modal-main .modal-body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .modal-main .modal-body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .modal-main .modal-body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-main .modal-body {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1800px) {
+  .modal-main .modal-body {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .modal-main .modal-body .basic {
@@ -61,6 +111,49 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 599px) {
+  .modal-main .modal-body .basic {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .modal-main .modal-body .basic {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .modal-main .modal-body .basic {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-main .modal-body .basic {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1800px) {
+  .modal-main .modal-body .basic {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .modal-main .modal-body .basic .image {
@@ -68,7 +161,7 @@
   height: 200px;
   width: 200px;
   overflow: hidden;
-  margin-right: 32px;
+  margin: 12px;
 }
 
 .modal-main .modal-body .basic .image img {
@@ -103,6 +196,10 @@
   color: #FFFFFF;
 }
 
+.modal-main .modal-body .basic .description {
+  margin: 12px;
+}
+
 .modal-main .modal-body .basic .description .name-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +215,7 @@
   line-height: 24px;
   color: #434364;
   text-transform: capitalize;
+  margin-right: 12px;
 }
 
 .modal-main .modal-body .basic .description .name-container .type {
@@ -142,6 +240,45 @@
   text-transform: uppercase;
 }
 
+.modal-main .modal-body .basic .description .walet {
+  margin-top: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #434343;
+}
+
+.modal-main .modal-body .basic .description .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 24px;
+}
+
+.modal-main .modal-body .basic .description .info-container img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.modal-main .modal-body .basic .description .info-container .info .tag {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #707070;
+}
+
+.modal-main .modal-body .basic .description .info-container .info .value {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #252525;
+  text-transform: capitalize;
+}
+
 .modal-main .modal-body .action {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,6 +287,50 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 599px) {
+  .modal-main .modal-body .action {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 600px) {
+  .modal-main .modal-body .action {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 900px) {
+  .modal-main .modal-body .action {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-main .modal-body .action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1800px) {
+  .modal-main .modal-body .action {
+    -webkit-box-pack: column;
+        -ms-flex-pack: column;
+            justify-content: column;
+  }
 }
 
 .modal-main .modal-body .action .button--edit {
@@ -164,7 +345,7 @@
   font-size: 14px;
   line-height: 20px;
   color: white;
-  margin-bottom: 16px;
+  margin: 12px;
 }
 
 .modal-main .modal-body .action .button--view-log {
@@ -180,7 +361,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #E2136E;
-  margin-bottom: 16px;
+  margin: 12px;
 }
 
 .display-block {

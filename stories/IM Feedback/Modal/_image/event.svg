@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63 (101010) - https://sketch.com -->
+    <title>6D78A339-2C80-4DE5-8087-C77AAA4CBB45</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="146_Manage-MDO" transform="translate(-589.000000, -544.000000)">
+            <rect fill="#FAFAFA" x="0" y="0" width="1366" height="1024"></rect>
+            <g id="Bars/Pagination-Copy" transform="translate(32.000000, 556.000000)">
+                <g id="Pagination"></g>
+            </g>
+            <rect id="Rectangle" fill-opacity="0.56" fill="#252525" x="0" y="0" width="1366" height="1024"></rect>
+            <g id="Popup" transform="translate(333.000000, 289.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="700" height="447" rx="8"></rect>
+                <g id="Group-6" transform="translate(24.000000, 100.000000)" fill="#B7B7B7" fill-rule="nonzero">
+                    <g id="Group-2">
+                        <g id="Stacked-Group">
+                            <g transform="translate(232.000000, 2.000000)" id="Stacked-Group-Copy-2">
+                                <g transform="translate(0.000000, 153.000000)">
+                                    <g id="Icons/ic_store">
+                                        <path d="M20.015625,21 L20.015625,8.015625 L3.984375,8.015625 L3.984375,21 L20.015625,21 Z M20.015625,3 C20.5468777,3 21.0078105,3.20312297 21.3984375,3.609375 C21.7890645,4.01562703 21.984375,4.484375 21.984375,5.015625 L21.984375,21 C21.984375,21.5312527 21.7890645,21.999998 21.3984375,22.40625 C21.0078105,22.812502 20.5468777,23.015625 20.015625,23.015625 L3.984375,23.015625 C3.45312234,23.015625 2.99218945,22.812502 2.6015625,22.40625 C2.21093555,21.999998 2.015625,21.5312527 2.015625,21 L2.015625,5.015625 C2.015625,4.484375 2.21093555,4.01562703 2.6015625,3.609375 C2.99218945,3.20312297 3.45312234,3 3.984375,3 L5.015625,3 L5.015625,0.984375 L6.984375,0.984375 L6.984375,3 L17.015625,3 L17.015625,0.984375 L18.984375,0.984375 L18.984375,3 L20.015625,3 Z" id="c"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

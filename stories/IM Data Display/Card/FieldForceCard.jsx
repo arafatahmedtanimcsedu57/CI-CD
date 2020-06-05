@@ -3,6 +3,7 @@ import moment from 'moment';
 
 import './style/FieldForceCard.css';
 
+
 class FieldForceCard extends Component {
     state = {
         fieldForce: {
