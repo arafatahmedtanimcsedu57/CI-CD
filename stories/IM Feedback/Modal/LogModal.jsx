@@ -5,6 +5,8 @@ import EscapeOutside from "react-escape-outside"
 
 import fse_img from './_image/person.svg';
 import leave_day_img from './_image/event.svg';
+import spot_code_img from './_image/spot_code.svg';
+import replace_img from './_image/replace.svg';
 
 import './style/LogModal.css';
 
@@ -13,10 +15,12 @@ const Modal = ({ handleClose, show, children }) => {
         <div className={show ? "modal display-block" : "modal display-none"}>
 
             <EscapeOutside onEscapeOutside={handleClose}>
-                <section className="modal-main">
-                    {children}
-                    {/* <button onClick={handleClose}>close</button> */}
-                </section>
+                <div className="wrapper-modal">
+                    <section className="modal-main">
+                        {children}
+                        {/* <button onClick={handleClose}>close</button> */}
+                    </section>
+                </div>
             </EscapeOutside>
         </div>
 
@@ -99,6 +103,28 @@ class LogModal extends Component {
                             <button className="button--edit"> Edit </button>
                             <button className="button--view-log"> View Log</button>
                         </div>
+                    </div>
+
+                    <div className="footer">
+                        <div className="info-container">
+                            <img src={spot_code_img} alt="spot code" />
+                            <div className="info">
+                                <div className="tag">Spots</div>
+                                <div className="values">{
+                                    this.state.data.spots.map(item =>
+                                        <div className="value">
+                                            {item}
+                                        </div>
+                                    )
+                                }
+                                </div>
+                            </div>
+                        </div>
+
+                        <button className="button--replace">
+                            <img src={replace_img} alt="replace button" />
+                            Replace MDO
+                        </button>
                     </div>
                 </Modal>
                 <button type="button" onClick={this.showModal}>

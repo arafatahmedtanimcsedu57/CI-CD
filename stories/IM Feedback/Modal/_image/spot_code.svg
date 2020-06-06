@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="24px" viewBox="0 0 23 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63 (101010) - https://sketch.com -->
+    <title>592EFCA1-B90C-49CB-BA0C-8890BFB216C1</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="146_Manage-MDO" transform="translate(-357.000000, -654.000000)">
+            <rect fill="#FAFAFA" x="0" y="0" width="1366" height="1024"></rect>
+            <g id="Data-Table" transform="translate(30.000000, 612.000000)">
+                <rect id="Rectangle" stroke="#F2F2F2" fill="#FFFFFF" x="0.5" y="0.5" width="1304" height="821" rx="8"></rect>
+                <g id="Table-Header" transform="translate(17.000000, 25.000000)"></g>
+            </g>
+            <rect id="Rectangle" fill-opacity="0.56" fill="#252525" x="0" y="0" width="1366" height="1024"></rect>
+            <g id="Popup" transform="translate(333.000000, 289.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="700" height="447" rx="8"></rect>
+                <g id="Stacked-Group-Copy-6" transform="translate(24.000000, 365.000000)" fill="#B7B7B7" fill-rule="nonzero">
+                    <g id="Icons/ic_store">
+                        <path d="M14.375,18.984375 L14.375,7.125 L8.625,5.015625 L8.625,16.875 L14.375,18.984375 Z M19.6308594,3 C19.9602881,3 20.125,3.17187328 20.125,3.515625 L20.125,18.609375 C20.125,18.8593763 20.0052095,19.0156247 19.765625,19.078125 L14.375,21 L8.625,18.890625 L3.50390625,20.953125 L3.36914062,21 C3.03971189,21 2.875,20.8281267 2.875,20.484375 L2.875,5.390625 C2.875,5.14062375 2.99479047,4.98437531 3.234375,4.921875 L8.625,3 L14.375,5.109375 L19.4960938,3.046875 L19.6308594,3 Z" id="m"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
