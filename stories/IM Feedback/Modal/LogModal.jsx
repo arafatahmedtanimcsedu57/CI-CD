@@ -18,7 +18,7 @@ const Modal = ({ handleClose, show, children }) => {
                 <div className="wrapper-modal">
                     <section className="modal-main">
                         {children}
-                        {/* <button onClick={handleClose}>close</button> */}
+
                     </section>
                 </div>
             </EscapeOutside>
@@ -61,11 +61,18 @@ class LogModal extends Component {
 
                 <Modal
                     show={this.state.show}
-                    handleClose={this.hideModal}
                 >
                     <div className="modal-header">
-                        <div className="headline">Manage MDO</div>
-                        <div className="sub-headline">You can alter details</div>
+                        <div className="headline">
+                            <div className="main-headline">Manage MDO</div>
+                            <div className="sub-headline">You can alter details</div>
+                        </div>
+                        <button
+                            className="button--close"
+                            onClick={this.hideModal}
+                        >
+                            X
+                        </button>
                     </div>
                     <div className="modal-body">
                         <div className="basic">

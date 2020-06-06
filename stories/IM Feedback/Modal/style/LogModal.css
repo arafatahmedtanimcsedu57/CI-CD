@@ -42,9 +42,15 @@
 
 .wrapper-modal .modal-main .modal-header {
   padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.wrapper-modal .modal-main .modal-header .headline {
+.wrapper-modal .modal-main .modal-header .headline .main-headline {
   font-family: Roboto;
   font-weight: 500;
   font-size: 20px;
@@ -52,12 +58,23 @@
   color: #434364;
 }
 
-.wrapper-modal .modal-main .modal-header .sub-headline {
+.wrapper-modal .modal-main .modal-header .headline .sub-headline {
   font-family: Roboto;
   font-weight: 300;
   font-size: 12px;
   line-height: 16px;
   color: #707070;
+}
+
+.wrapper-modal .modal-main .modal-header .button--close {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: black;
 }
 
 .wrapper-modal .modal-main .modal-body {
@@ -236,7 +253,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 23px;
+  height: 24px;
   width: 44px;
   background: #D175C9;
   border-radius: 2px;

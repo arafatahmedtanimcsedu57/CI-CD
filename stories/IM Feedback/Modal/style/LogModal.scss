@@ -71,21 +71,37 @@
 
         .modal-header {
             padding: 12px;
+            display: flex;
+            justify-content: space-between;
 
             .headline {
-                font-family: Roboto;
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 24px;
-                color: #434364;
+                .main-headline {
+                    font-family: Roboto;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #434364;
+                }
+
+                .sub-headline {
+                    font-family: Roboto;
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #707070;
+                }
             }
 
-            .sub-headline {
+            .button--close {
+                background: none;
+                border: none;
+                outline: none;
+
                 font-family: Roboto;
-                font-weight: 300;
-                font-size: 12px;
-                line-height: 16px;
-                color: #707070;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 400;
+                color: black;
             }
         }
 
@@ -206,13 +222,12 @@
                             justify-content: center;
                             align-items: center;
 
-                            height: 23px;
+                            height: 24px;
                             width: 44px;
 
                             background: #D175C9;
 
                             border-radius: 2px;
-                            ;
 
                             font-family: Roboto;
                             font-weight: 500;
