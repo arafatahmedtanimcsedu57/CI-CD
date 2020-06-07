@@ -20,7 +20,7 @@ class FieldForceCard extends Component {
         const { img, name, type, fsc, spot, date, status } = this.state.fieldForce
         return (
             <section className="example">
-                <h3 className="ex-title">Card for Profile</h3>
+                <h3 className="ex-title">Card Type: 1</h3>
 
 
                 <div className="card--profile">

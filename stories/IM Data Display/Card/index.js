@@ -18,9 +18,6 @@ class Card extends Component {
 
                 <h2 className="title">Examples:</h2>
 
-
-
-
                 <FieldForceCard />
             </Fragment>
         );

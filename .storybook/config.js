@@ -14,6 +14,7 @@ function loadStories() {
 
   require('../stories/IM Data Display');
   require('../stories/IM Feedback');
+  require('../stories/IM Data Entry');
   // You can require as many stories as you need.
 }
 

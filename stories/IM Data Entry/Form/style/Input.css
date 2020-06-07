@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+.group {
+  position: relative;
+}
+
+.group input {
+  background: none;
+  display: block;
+  padding: 16px 16px 16px 16px;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #b7b7b7;
+  color: #252525;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 500px;
+}
+
+.group input:focus {
+  outline: none;
+}
+
+.group input:focus ~ label,
+.group input:valid ~ label {
+  top: -10px;
+  left: 15px;
+  padding: 0px;
+  background: white;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #b7b7b7;
+}
+
+.group input:focus ~ .bar:before {
+  width: 100%;
+}
+
+.group label {
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 0px;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  padding: 16px;
+  color: #b7b7b7;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.group {
+  position: relative;
+}
+
+.group textarea {
+  background: none;
+  display: block;
+  padding: 16px 16px 16px 16px;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #b7b7b7;
+  color: #252525;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 500px;
+  resize: none;
+}
+
+.group textarea:focus {
+  outline: none;
+}
+
+.group textarea:focus ~ label,
+.group textarea:valid ~ label {
+  top: -10px;
+  left: 15px;
+  padding: 0px;
+  background: white;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #b7b7b7;
+}
+
+.group textarea:focus ~ .bar:before {
+  width: 100%;
+}
+
+.group label {
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 0px;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  padding: 16px;
+  color: #b7b7b7;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+/*# sourceMappingURL=Input.css.map */
