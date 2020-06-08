@@ -19,9 +19,7 @@ class Modal extends Component {
                     but without jumping to a new page and interrupting the
                     user's workflow, you can use Modal to create a new
                     floating layer over the current page to get user
-                    feedback or display information. Additionally, if you
-                    need show a simple confirmation dialog, you can use
-                    antd. Modal.confirm(), and so on.
+                    feedback or display information.
                 </p>
 
                 <h2 className="title">Examples:</h2>

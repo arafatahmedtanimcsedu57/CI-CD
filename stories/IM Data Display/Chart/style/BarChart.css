@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,600&display=swap");
+.chart-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.chart-container .chart {
+  display: table;
+  table-layout: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0px 0px 30px 0px;
+}
+
+.chart-container .chart li {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  height: 300px;
+}
+
+.chart-container .chart li:hover {
+  opacity: 0.7;
+}
+
+.chart-container .chart li:before {
+  content: attr(value);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.chart-container .chart span {
+  margin: 8px 1.75em 8px 1.75em;
+  display: block;
+  background: #d1ecfa;
+  -webkit-animation: draw 1s ease-in-out;
+          animation: draw 1s ease-in-out;
+  border-radius: 4px 4px 0px 0px;
+  min-width: 25px;
+}
+
+.chart-container .chart span:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: 20px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #707070;
+  text-transform: capitalize;
+  content: attr(value);
+  white-space: nowrap;
+}
+
+.chart-container .chart span:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #434364;
+  text-transform: capitalize;
+  content: attr(title);
+}
+
+@-webkit-keyframes draw {
+  0% {
+    height: 0;
+  }
+}
+
+@keyframes draw {
+  0% {
+    height: 0;
+  }
+}
+/*# sourceMappingURL=BarChart.css.map */

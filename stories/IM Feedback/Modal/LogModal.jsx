@@ -61,6 +61,7 @@ class LogModal extends Component {
 
                 <Modal
                     show={this.state.show}
+                    handleClose={this.hideModal}
                 >
                     <div className="modal-header">
                         <div className="headline">
