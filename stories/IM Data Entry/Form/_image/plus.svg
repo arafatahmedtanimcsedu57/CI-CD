@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63 (101010) - https://sketch.com -->
+    <title>C570126A-3853-4913-AB78-BAC8B2AE8363</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="320" height="515" rx="4"></rect>
+        <filter x="-13.1%" y="-5.8%" width="126.2%" height="116.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="12" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bKash-Biponon-v8---Filter-Regular" transform="translate(-830.000000, -356.000000)">
+            <rect fill="#FAFAFA" x="0" y="0" width="1440" height="1024"></rect>
+            <g id="Group-6" transform="translate(80.000000, 103.000000)">
+                <g id="Group-3">
+                    <path d="M1320,0.5 L8,0.5 C5.92893219,0.5 4.05393219,1.33946609 2.69669914,2.69669914 C1.33946609,4.05393219 0.5,5.92893219 0.5,8 L0.5,482 C0.5,490.698485 4.0257576,498.573485 9.72613639,504.273864 C15.4265152,509.974242 23.3015152,513.5 32,513.5 L1296,513.5 C1304.69848,513.5 1312.57348,509.974242 1318.27386,504.273864 C1323.97424,498.573485 1327.5,490.698485 1327.5,482 L1327.5,8 C1327.5,5.92893219 1326.66053,4.05393219 1325.3033,2.69669914 C1323.94607,1.33946609 1322.07107,0.5 1320,0.5 Z" id="Rectangle" stroke="#F2F2F2" fill="#FFFFFF"></path>
+                    <rect id="Rectangle-Copy-5" stroke="#979797" fill="#DD8E9E" opacity="0.02" transform="translate(664.500000, 391.000000) scale(-1, 1) translate(-664.500000, -391.000000) " x="442.5" y="268.5" width="444" height="245"></rect>
+                </g>
+            </g>
+            <rect id="Rectangle" fill-opacity="0.56" fill="#252525" x="0" y="0" width="1440" height="1024"></rect>
+            <g id="Filter" transform="translate(560.000000, 255.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Stacked-Group-2" transform="translate(24.000000, 101.000000)" fill="#808080">
+                    <g id="Item-Copy">
+                        <g id="Group-7">
+                            <g id="Icons/ic_close-Copy-4" transform="translate(246.000000, 0.000000)">
+                                <polygon id="a" points="14.2382812 9.73828125 9.73828125 9.73828125 9.73828125 14.2382812 8.26171875 14.2382812 8.26171875 9.73828125 3.76171875 9.73828125 3.76171875 8.26171875 8.26171875 8.26171875 8.26171875 3.76171875 9.73828125 3.76171875 9.73828125 8.26171875 14.2382812 8.26171875"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.select {
+  position: relative;
+}
+
+.select .select-controller {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 250px;
+  min-width: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 8px 8px 24px;
+  border: 1px solid #FF96c8;
+  border-radius: 4px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.select .select-controller .tag--selected-option {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #434364;
+}
+
+.select .options-container {
+  position: absolute;
+  z-index: 10;
+  background: white;
+  margin-top: 5px;
+  min-width: 250px;
+  max-width: 250px;
+  max-height: 250px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 12px 24px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 12px 24px 0 rgba(0, 0, 0, 0.08);
+  padding: 8px 16px;
+  overflow-y: auto;
+}
+
+.select .options-container .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 34px;
+  border-bottom: 1px solid #f4f4f4;
+  width: 100%;
+}
+
+.select .options-container .option .tag--option--has-child {
+  color: #434364;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.select .options-container .option .tag--option {
+  color: #434364;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.select .options-container .option img {
+  cursor: pointer;
+}
+/*# sourceMappingURL=Select.css.map */
