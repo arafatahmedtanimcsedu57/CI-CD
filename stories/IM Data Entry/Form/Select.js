@@ -33,15 +33,19 @@ class Option extends Component {
 
         level++;
         option.child.map(item => this.searchActiveLevel(item, searchString, level))
-        if (option.child.find(item => item.name.includes(searchString))) {
+        if (option.child.find(item => item.name.toUpperCase().includes(searchString.toUpperCase()))) {
             this.setState({
-                activeLevel: level
+                activeLevel: level,
+                open: true
             })
         }
     }
 
     componentDidUpdate(prevProps) {
         if (prevProps.searchString !== this.props.searchString) {
+            this.setState({
+                open: false
+            })
             this.searchActiveLevel(this.props.option, this.props.searchString, 0)
         }
     }
@@ -80,14 +84,14 @@ class Option extends Component {
                         this.props.option.child
                         && <img
                             onClick={() =>
-                                this.setState({ open: !this.state.open })
+                                this.state.open ? this.setState({ open: false }) : this.setState({ open: true })
                             }
                             src={this.state.open ? minus_img : plus_img}
                             alt="expand option"
                         />
                     }</div>
                 {this.props.option.child
-                    && this.state.open || (this.state.activeLevel > 0)
+                    && (this.state.open || (this.state.activeLevel > 0))
                     && this.props.option.child.map((option, index) =>
                         <Option
                             option={option}
@@ -114,32 +118,32 @@ class Select extends Component {
 
         data: [
             {
-                name: "bogra",
+                name: "a",
                 type: "area",
                 child: [
                     {
-                        name: "bogra",
+                        name: "bc",
                         type: "territory",
                         child: [{
-                            name: 'arafat distribution',
+                            name: 'kk',
                             type: "distribution house",
                             child: null
                         },
                         {
-                            name: 'asia traders',
+                            name: 'll',
                             type: "distribution house",
                             child: null
                         }]
                     }, {
-                        name: "rongpur",
+                        name: "de",
                         type: "territory",
                         child: [{
-                            name: 'fatan distribution',
+                            name: 'lc',
                             type: "distribution house",
                             child: null
                         },
                         {
-                            name: 'traders',
+                            name: 'zz',
                             type: "distribution house",
                             child: null
                         }]
@@ -201,6 +205,8 @@ class Select extends Component {
                                     onChange={(e) => this.setState({
                                         searchString: e.target.value
                                     })}
+                                    className="search-option"
+                                    placeholder="Search"
                                 />
                             }{this.state.data.map(
                                 (option, index) =>
