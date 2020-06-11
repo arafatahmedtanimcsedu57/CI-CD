@@ -84,7 +84,12 @@ class Option extends Component {
                         this.props.option.child
                         && <img
                             onClick={() =>
-                                this.state.open ? this.setState({ open: false }) : this.setState({ open: true })
+                                this.state.open ?
+                                    this.setState({
+                                        open: false,
+                                        activeLevel: 0
+                                    })
+                                    : this.setState({ open: true })
                             }
                             src={this.state.open ? minus_img : plus_img}
                             alt="expand option"
@@ -125,7 +130,7 @@ class Select extends Component {
                         name: "bc",
                         type: "territory",
                         child: [{
-                            name: 'kk',
+                            name: 'bb',
                             type: "distribution house",
                             child: null
                         },
